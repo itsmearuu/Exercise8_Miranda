@@ -1,0 +1,80 @@
+html, body{
+    margin: 0;
+}
+.row{
+    display: inline-block;
+    width: 100%;
+
+}
+.element-2{
+    color: white;
+    width: 50%;
+    float: left;
+}
+.element-2-content{
+    background-color: #0f1923;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.closing_btn{
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background-color: rgb(76, 213, 255);
+    padding: 9px;
+    z-index: 12;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+}
+/* .closing_btn2{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: green;
+    padding: 10px;
+    z-index: 11;
+} */
+.nav_bar{
+    background-color: red;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.nav_bar h1{
+    margin: 0;
+    /* color: grey; */
+}
+.icon{
+    color: #0f1923;
+    font-size: 20px;
+}
+.closing_btn button{
+    background: none;
+    border: none;
+}
+ /* RESPONSIVENESS MEDIA SCREEN */
+@media screen and (max-width: 1024px) {
+    .nav_bar{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav_bar{
+        background-color: green;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav_bar{
+        background-color: orange;
+    }
+    .element-2{
+        width: 100%;
+        float: none;
+    }
+}
